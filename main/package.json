@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "./node_modules/.bin/truffle compile",
+    "deploy:rinkeby": "./node_modules/.bin/truffle deploy --network=rinkeby"
   },
   "author": "lioloc",
   "license": "ISC",
   "dependencies": {
-    "truffle": "^5.5.0"
+    "truffle": "^5.5.0",
+    "@babel/core": "^7.17.5",
+    "@truffle/hdwallet-provider": "^2.0.3",
+    "dotenv": "^16.0.0",
+    "web3": "^1.7.0"
   }
 }
