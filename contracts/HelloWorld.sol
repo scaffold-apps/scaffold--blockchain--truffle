@@ -5,7 +5,7 @@ contract HelloWorld {
     string public name = "Lioloc";
 
     function print() external view returns (string memory) {
-        return string(abi.encodePacked('Hello', name));
+        return string(abi.encodePacked('Hello ', name));
     }
 
     function updateName(string memory _name) external {
